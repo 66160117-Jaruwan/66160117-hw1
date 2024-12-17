@@ -1,125 +1,133 @@
 <!DOCTYPE html>
-<html lang="th">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>แนะนำสถานที่ท่องเที่ยว-หน้าหลัก</title>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>แนะนำสถานที่ท่องเที่ยว - สถานที่ท่องเที่ยว</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
     <header role="banner">
-        <nav role="navigation">
-          <ul class="nav-menu">
-            <li><a href="home.html">หน้าหลัก</a></li>
-            <li><a href="about.html">สถานที่ท่องเที่ยว</a></li>
-            <li><a href="contact.html">ติดต่อเรา</a></li>
-          </ul>
-        </nav>
+      <nav role="navigation">
+        <div class="logo">บอกแล้วว่าต้องไป !</div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="home.html">หน้าหลัก</a></li>
+          <li><a href="about.html">สถานที่ท่องเที่ยว</a></li>
+          <li><a href="contact.html">ติดต่อเรา</a></li>
+        </ul>
+      </nav>
+      <script src="script.js"></script>
     </header>
     <main role="main">
-        <section>
-          <h1>5 ที่เที่ยวชลบุรี แนะนำต้องมา</h1>
-          <article>
-            <h2>ชายหาดบางแสน</h2>
-            <strong>ชายหาดบางแสน</strong>
-            <a
-              >เริ่มต้นกันกับจุดเช็คอินและที่เที่ยวชลบุรี
-              ห่างจากสะพานปลาไปไม่ไกลนัก ติดทะเล ถือเป็นซิกเนเจอร์ของจังหวัดชลบุรี
-              ใครที่มาเที่ยว ต้องไม่พลาดแลนด์มาร์กสำคัญนี้เป็นอันขาด
-              เพราะนอกจากน้ำใส ทะเลสวยแล้ว ที่นี่เขายังมี 8 ร้านอาหารริมทะเลบางแสน
-              บรรยากาศสุดชิล วิวสุดเลิศ
-              เหมาะสำหรับนั่งสังสรรค์ส่งท้ายทริปอันยาวไกลนี้จริงๆ
-            </a>
-            <img src="images/หาด.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
-            <!-- ที่มา https://travel.kapook.com/view270751.html -->
-            <strong>แผนที่ </strong>
-            <a href="https://maps.app.goo.gl/u74kr6FRsS1B5Lwy8"
-              >https://maps.app.goo.gl/u74kr6FRsS1B5Lwy8</a
-            >
-            <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 08:30 - 17:30 น.</p>
-            <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
-          </article>
-          <article>
-            <h2>แกรนด์แคนยอน</h2>
-            <strong>แกรนด์แคนยอน</strong>
-            <a
-              >สถานที่ถ่ายรูปสุดเก๋แถมยังมีวิวธรรมชาติแจ่ม ๆ ตระการตาให้เพื่อน ๆ
-              ได้ชื่นชมและเก็บภาพกันแบบเต็มอิ่มอีกต่างหาก
-              ต้องบอกเลยว่าที่นี่เป็นแหล่งท่องเที่ยวชลบุรีที่ไม่ควรพลาด
-              โดยเฉพาะสายโซเชียลที่อยากได้รูปสวย ๆ
-              ไปอัปเดพให้คนในไทม์ไลน์อิจฉาเล่น!
-            </a>
-            <img src="images/แกรนด์แคนยอน.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
-            <!-- ที่มารูป : https://pantip.com/topic/40067296 -->
-            <strong>แผนที่ </strong>
-            <a href="https://maps.app.goo.gl/9chUWZyQxdVzTMQu6"
-              >https://maps.app.goo.gl/9chUWZyQxdVzTMQu6</a
-            >
-            <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 18:00 น.</p>
-            <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
-          </article>
-          <article>
-            <h2>เรือหลวงจักรีนฤเบศร</h2>
-            <strong>เรือหลวงจักรีนฤเบศร</strong>
-            <a
-              >ใกล้ๆ กันในบริเวณเกาะ
-              ยังมีพิพิธภัณฑ์เรือรบที่อยู่ในเขตของค่ายทหารเรือสัตหีบอยู่เหมือนกัน
-              ซึ่งเรือที่จอดโชว์เทียบท่าอยู่นั้น คือเรือธง
-              หรือเรือที่มีหน้าที่นำขบวนทัพทหารเรือนั่งเอง
-              ถ่ายรูปบนดาดฟ้าของเรือแบบเท่ๆ คูลๆ กันไปเลย!
-            </a>
-            <img src="images/เรือหลวง.webp" alt="สถานที่ท่องเที่ยวชลบุรี" />
-            <!-- ที่มารูป : https://www.wongnai.com/trips/travel-at-chonburi -->
-            <strong>แผนที่ </strong>
-            <a href="https://maps.app.goo.gl/h16HqreTaZXNkLyN9"
-              >https://maps.app.goo.gl/h16HqreTaZXNkLyN9</a
-            >
-            <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 16:00 น.</p>
-            <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
-            <p><strong>หมายเหตุ </strong>โปรดแต่งกายสุภาพและงดสูบบุหรี่</p>
-          </article>
-          <article>
-            <h2>ตลาดน้ำ 4 ภาค</h2>
-            <strong>ตลาดน้ำ 4 ภาค</strong>
-            <a
-              >ตลาดน้ำชื่อดังและที่พักผ่อนชลบุรีที่เต็มไปด้วยร้านต่างๆ ทั้งของกิน
-              ของใช้ ของฝาก มีให้นักท่องเที่ยวเลือกซื้อหากันมากมาย
-              พร้อมกับชื่นชมสถาปัตยกรรม
-              โดยรอบที่มีกลิ่นอายของความเป็นตลาดสมัยโบราณ ผสมผสานวัฒนธรรม 4
-              ภาคได้อย่างลงตัว สัมผัสวิถีริมน้ำสุดชิล
-            </a>
-            <img src="images/ตลาดน้ำ 4 ภาค.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
-            <!-- ที่มารูป : https://www.uhotelsresorts.com/th/ujomtien/attractions/pattaya-floating-market -->
-            <strong>แผนที่ </strong>
-            <a href="https://maps.app.goo.gl/hPbLwCqjFzivN2Wv8"
-              >https://maps.app.goo.gl/hPbLwCqjFzivN2Wv8</a
-            >
-            <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 20:00 น.</p>
-            <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
-          </article>
-          <article>
-            <h2>น้ำตกชันตาเถร</h2>
-            <strong>น้ำตกชันตาเถร</strong>
-            <a
-              >น้ำตก 6 ชั้นที่ตั้งอยู่ในอำเภอศรีราชา
-              ห่างจากอำเภอเมืองชลบุรีไม่ไกลนัก น้ำใสไหลเย็น
-              แมกไม้รอบข้างอุดมสมบูรณ์
-              ถ้าใครอยากชมธรรมชาติแบบฉ่ำปอดแนะนำให้ไปช่วงฤดูฝน
-              รับรองฟินอย่าบอกใคร!
-            </a>
-            <img src="images/น้ำตก.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
-            <!-- ที่มารูป : https://www.wongnai.com/trips/travel-at-chonburi -->
-            <strong>แผนที่ </strong>
-            <a href="https://maps.app.goo.gl/nuzFnSUYDVFzULu89"
-              >https://maps.app.goo.gl/nuzFnSUYDVFzULu89</a
-            >
-            <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 08:00 - 17:00 น.</p>
-            <p><strong>อัตราค่าเข้าชม </strong>เด็ก 10 บาท ผู้ใหญ๋ 20 บาท</p>
-          </article>
-        </section>
+      <section>
+        <h1>5 ที่เที่ยวชลบุรี แนะนำต้องมา</h1>
+        <article>
+          <h2>ชายหาดบางแสน</h2>
+          <strong>ชายหาดบางแสน</strong>
+          <a
+            >เริ่มต้นกันกับจุดเช็คอินและที่เที่ยวชลบุรี
+            ห่างจากสะพานปลาไปไม่ไกลนัก ติดทะเล ถือเป็นซิกเนเจอร์ของจังหวัดชลบุรี
+            ใครที่มาเที่ยว ต้องไม่พลาดแลนด์มาร์กสำคัญนี้เป็นอันขาด
+            เพราะนอกจากน้ำใส ทะเลสวยแล้ว ที่นี่เขายังมี 8 ร้านอาหารริมทะเลบางแสน
+            บรรยากาศสุดชิล วิวสุดเลิศ
+            เหมาะสำหรับนั่งสังสรรค์ส่งท้ายทริปอันยาวไกลนี้จริงๆ
+          </a>
+          <img src="images/หาด.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
+          <!-- ที่มา https://travel.kapook.com/view270751.html -->
+          <strong>แผนที่ </strong>
+          <a href="https://maps.app.goo.gl/u74kr6FRsS1B5Lwy8"
+            >https://maps.app.goo.gl/u74kr6FRsS1B5Lwy8</a
+          >
+          <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 08:30 - 17:30 น.</p>
+          <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
+        </article>
+        <article>
+          <h2>แกรนด์แคนยอน</h2>
+          <strong>แกรนด์แคนยอน</strong>
+          <a
+            >สถานที่ถ่ายรูปสุดเก๋แถมยังมีวิวธรรมชาติแจ่ม ๆ ตระการตาให้เพื่อน ๆ
+            ได้ชื่นชมและเก็บภาพกันแบบเต็มอิ่มอีกต่างหาก
+            ต้องบอกเลยว่าที่นี่เป็นแหล่งท่องเที่ยวชลบุรีที่ไม่ควรพลาด
+            โดยเฉพาะสายโซเชียลที่อยากได้รูปสวย ๆ
+            ไปอัปเดพให้คนในไทม์ไลน์อิจฉาเล่น!
+          </a>
+          <img src="images/แกรนด์แคนยอน.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
+          <!-- ที่มารูป : https://pantip.com/topic/40067296 -->
+          <strong>แผนที่ </strong>
+          <a href="https://maps.app.goo.gl/9chUWZyQxdVzTMQu6"
+            >https://maps.app.goo.gl/9chUWZyQxdVzTMQu6</a
+          >
+          <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 18:00 น.</p>
+          <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
+        </article>
+        <article>
+          <h2>เรือหลวงจักรีนฤเบศร</h2>
+          <strong>เรือหลวงจักรีนฤเบศร</strong>
+          <a
+            >ใกล้ๆ กันในบริเวณเกาะ
+            ยังมีพิพิธภัณฑ์เรือรบที่อยู่ในเขตของค่ายทหารเรือสัตหีบอยู่เหมือนกัน
+            ซึ่งเรือที่จอดโชว์เทียบท่าอยู่นั้น คือเรือธง
+            หรือเรือที่มีหน้าที่นำขบวนทัพทหารเรือนั่งเอง
+            ถ่ายรูปบนดาดฟ้าของเรือแบบเท่ๆ คูลๆ กันไปเลย!
+          </a>
+          <img src="images/เรือหลวง.webp" alt="สถานที่ท่องเที่ยวชลบุรี" />
+          <!-- ที่มารูป : https://www.wongnai.com/trips/travel-at-chonburi -->
+          <strong>แผนที่ </strong>
+          <a href="https://maps.app.goo.gl/h16HqreTaZXNkLyN9"
+            >https://maps.app.goo.gl/h16HqreTaZXNkLyN9</a
+          >
+          <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 16:00 น.</p>
+          <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
+          <p><strong>หมายเหตุ </strong>โปรดแต่งกายสุภาพและงดสูบบุหรี่</p>
+        </article>
+        <article>
+          <h2>ตลาดน้ำ 4 ภาค</h2>
+          <strong>ตลาดน้ำ 4 ภาค</strong>
+          <a
+            >ตลาดน้ำชื่อดังและที่พักผ่อนชลบุรีที่เต็มไปด้วยร้านต่างๆ ทั้งของกิน
+            ของใช้ ของฝาก มีให้นักท่องเที่ยวเลือกซื้อหากันมากมาย
+            พร้อมกับชื่นชมสถาปัตยกรรม
+            โดยรอบที่มีกลิ่นอายของความเป็นตลาดสมัยโบราณ ผสมผสานวัฒนธรรม 4
+            ภาคได้อย่างลงตัว สัมผัสวิถีริมน้ำสุดชิล
+          </a>
+          <img src="images/ตลาดน้ำ 4 ภาค.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
+          <!-- ที่มารูป : https://www.uhotelsresorts.com/th/ujomtien/attractions/pattaya-floating-market -->
+          <strong>แผนที่ </strong>
+          <a href="https://maps.app.goo.gl/hPbLwCqjFzivN2Wv8"
+            >https://maps.app.goo.gl/hPbLwCqjFzivN2Wv8</a
+          >
+          <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 09:00 - 20:00 น.</p>
+          <p><strong>อัตราค่าเข้าชม </strong>ฟรี</p>
+        </article>
+        <article>
+          <h2>น้ำตกชันตาเถร</h2>
+          <strong>น้ำตกชันตาเถร</strong>
+          <a
+            >น้ำตก 6 ชั้นที่ตั้งอยู่ในอำเภอศรีราชา
+            ห่างจากอำเภอเมืองชลบุรีไม่ไกลนัก น้ำใสไหลเย็น
+            แมกไม้รอบข้างอุดมสมบูรณ์
+            ถ้าใครอยากชมธรรมชาติแบบฉ่ำปอดแนะนำให้ไปช่วงฤดูฝน
+            รับรองฟินอย่าบอกใคร!
+          </a>
+          <img src="images/น้ำตก.jpg" alt="สถานที่ท่องเที่ยวชลบุรี" />
+          <!-- ที่มารูป : https://www.wongnai.com/trips/travel-at-chonburi -->
+          <strong>แผนที่ </strong>
+          <a href="https://maps.app.goo.gl/nuzFnSUYDVFzULu89"
+            >https://maps.app.goo.gl/nuzFnSUYDVFzULu89</a
+          >
+          <p><strong>เวลาเปิด-ปิด </strong>ทุกวัน 08:00 - 17:00 น.</p>
+          <p><strong>อัตราค่าเข้าชม </strong>เด็ก 10 บาท ผู้ใหญ๋ 20 บาท</p>
+        </article>
+      </section>
     </main>
     <footer role="contentinfo">
-        <p>ติดต่อเรา: jaruwan@gmail.com</p>
-        <p>เบอร์โทรศัพท์: 0612345789</p>
-    </footer>    
-</body>
+      <p>ติดต่อเรา: jaruwan@gmail.com</p>
+      <p>เบอร์โทรศัพท์: 0612345789</p>
+    </footer>
+  </body>
 </html>
