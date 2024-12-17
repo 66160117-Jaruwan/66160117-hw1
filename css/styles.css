@@ -1,0 +1,310 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9; /* พื้นหลังสีอ่อน */
+    color: #333;             /* สีข้อความ */
+  }
+  
+  header {
+    background-color: #597cd2; /* สีเขียวสำหรับ Header */
+    color: white;              /* สีตัวอักษร */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  main section h1 {
+    text-align: center;
+    color: #3d3e96;
+    margin: 10;
+  }
+  
+  nav ul {
+    list-style: none;          /* ลบ Bullet */
+    padding: 0;
+    display: flex;             /* ใช้ Flexbox จัด Navigation */
+    justify-content: center;   /* จัดให้อยู่กลาง */
+    background-color: #f0f859;    /* สีพื้นหลัง Navigation */
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    color: rgb(5, 5, 5);              /* สีตัวอักษรของลิงก์ */
+    text-decoration: none;     /* ลบขีดเส้นใต้ */
+    padding: 10px 15px;
+    display: block;
+    border-radius: 5px;        /* ทำมุมโค้งมน */
+    transition: background 0.3s;
+  }
+  
+  nav ul li a:hover {
+    background-color: #ffffff; /* เปลี่ยนสีพื้นหลังเมื่อ Hover */
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  main section h2 {
+    text-align: center;
+    color: #4e7eed;
+  }
+  
+  main section img {
+    display: block;
+    max-width: 70%;           /* ทำให้ภาพย่อ-ขยายอัตโนมัติ */
+    margin: 0 auto;            /* จัดให้อยู่กลาง */
+    border-radius: 10px;
+  }
+  
+  article {
+    background: #fff;          /* สีพื้นหลังสีขาว */
+    padding: 15px;
+    margin: 15px auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
+    max-width: 800px;          /* กำหนดความกว้างสูงสุด */
+  }
+  
+  article strong {
+    font-size: 1em;
+    color: #6600FF;
+  }
+  
+  footer {
+    background: #333;          /* สีพื้นหลังของ Footer */
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+
+  /* ไฮไลท์ */
+  .highlight-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+  
+  .line {
+    flex: 1;
+    border-top: 2px solid #e1a24c; /* เส้นสีส้ม */
+    margin: 0 10px;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .icon {
+    display: block;
+    margin: 0 auto 10px;
+    width: 30px; /* ปรับขนาดไอคอน */
+  }
+  
+  h2 {
+    font-size: 24px;
+    color: #000; /* สีดำ */
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  h2 .highlight-color {
+    color: #e1a24c; /* สีส้มสำหรับ "light" */
+  }
+
+  /* กรอกฟอร์ม */
+  form {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #121111;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+  }
+  
+  fieldset {
+    border: 1px solid #121212;
+    padding: 15px;
+  }
+  
+  legend {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+  
+  .form-row {
+    display: flex;
+    align-items: ;      /* จัดแนวกลางแนวตั้ง */
+    margin-bottom: 10px;      /* ระยะห่างระหว่างบรรทัด */
+  }
+  
+  .form-row label {
+    width: auto;             /* กำหนดความกว้างของ Label เท่ากัน */
+    font-weight: bold;
+    margin-right: 10px;       /* ระยะห่าง Label กับช่องกรอก */
+  }
+  
+  .form-row input,
+  .form-row textarea {
+    flex: 5;                  /* ให้ช่องกรอกยืดเต็มพื้นที่ที่เหลือ */
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;       
+    margin-right: 10px;       /* ปรับระยะห่างเล็กน้อย */
+  }
+  
+  .form-row input {
+    height: 30px;             /* กำหนดความสูงเท่ากันสำหรับ Input */
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+
+  /* ติดต่อเรา */
+  .contact-info {
+    display: flex;
+    justify-content: space-between; /* ช่องห่างเท่าๆ กัน */
+    align-items: center;
+    background-color: #f9f9f9; /* สีพื้นหลัง */
+    padding: 15px; /* ระยะห่างภายในกล่อง */
+    border: 1px solid #ddd; /* ขอบกล่อง */
+    border-radius: 8px; /* มุมโค้งมน */
+    max-width: 700px; /* ความกว้างสูงสุดของกล่อง */
+    margin: auto; /* จัดให้อยู่กึ่งกลางหน้าจอ */
+    font-family: Arial, sans-serif;
+  }
+  
+  .info-box {
+    flex: 1; /* ให้แต่ละกล่องยืดเท่าๆ กัน */
+    text-align: center; /* จัดข้อความตรงกลาง */
+    font-size: 16px;
+  }
+  
+  .info-box strong {
+    color: #333; /* สีข้อความหัวข้อ */
+  }
+
+  
+  
+  /* รีเซ็ตค่าเริ่มต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* Hamburger Menu Icon */
+.hamburger {
+  display: none; /* ซ่อนเมนูบนหน้าจอใหญ่ */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #f9776e;
+  margin: 3px 0;
+}
+
+/* เมนูหลัก */
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu a {
+  color: #fcfcfc; 
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.nav-menu a:hover {
+  color: #f9f96e;
+}
+
+
+/* Media Query สำหรับมือถือ */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* แสดง hamburger menu */
+  }
+
+  .nav-menu {
+    display: none; /* ซ่อนเมนูหลัก */
+    flex-direction: row;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #5c76c3;
+    padding: 10px 0;
+  }
+
+  .nav-menu.active {
+    display: flex; /* แสดงเมนูเมื่อคลิก */
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  fieldset {
+    flex-direction: column; /* เปลี่ยนเป็นเรียงแนวตั้ง */
+  }
+
+  label {
+    width: 100%; /* ทำให้ Label กว้างเต็มหน้าจอ */
+    margin-bottom: 5px; /* ระยะห่างด้านล่าง Label */
+  }
+
+  input, textarea {
+    width: 100%; /* ให้ Input ขยายเต็มความกว้าง */
+    margin-bottom: 10px; /* ระยะห่างระหว่างช่องกรอก */
+  
+
+  button {
+    width: 100%; /* ปุ่มกว้างเต็มหน้าจอ */
+  }
+
+  
+}
